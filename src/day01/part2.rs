@@ -8,12 +8,5 @@ pub fn solve(input: &Input) -> Output {
     let length_input = sorted_input.len();
     let top_three_calories = &sorted_input[length_input-3..];
 
-    let sum = top_three_calories.iter().sum();
-
-    let output = sum;
-    
-
-
-    // input.iter().copied().max().unwrap_or_default().into()
-
+    top_three_calories.iter().sum::<u32>().into()
 }
